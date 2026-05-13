@@ -33,8 +33,8 @@ function LockedBox() {
       restitution={0.35} // Nice heavy chest landing
       friction={0.7}
     >
-      {/* Scaled up for correct scene metrics */}
-      <primitive object={scene} scale={130} position={[0, -0.5, 0]} />
+      {/* Scaled optimally for the physics world */}
+      <primitive object={scene} scale={45} />
     </RigidBody>
   )
 }
